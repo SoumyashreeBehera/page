@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+      }
+      .section-block {
+        max-width: 800px;
+        padding: 30px 50px;
+        margin: 0% auto;
+        background-color: white;
+      }
+      h4,
+      p {
+        margin: 5px 0px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      h1,
+      h4 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .section-scholarship {
+        display: flex;
+        margin-bottom: 40px;
+      }
+      .section-scholarship > div {
+        flex-grow: 1;
+        display: flex;
+        margin-right: 2%;
+        border-radius: 5px;
+        color: white;
+        background-color: #355ed8;
+      }
+      .section-scholarship > div:first-child {
+        background-color: #f1c317;
+      }
+      .section-scholarship > div:last-child {
+        background-color: #00c4dc;
+        margin-right: 0px;
+      }
+      .small-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin: 7% 7%;
+      }
+      .small-heading {
+        margin: 7% 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .section-program {
+        text-align: center;
+      }
+      .flex-program {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 40px;
+        color: black;
+      }
+      .flex-program > p {
+        padding: 3px 0px;
+        flex-basis: 20%;
+        border-radius: 2px;
+        background-color: #f8f9fe;
+      }
+      .flex-program > p:first-child {
+        color: white;
+        background-color: #00c4dc;
+      }
+      .flex-program > p:hover {
+        background-color: teal;
+        color: white;
+      }
+      .section-engg {
+        display: grid;
+        grid-gap: 17px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+      }
+      .engg {
+        background-color: #f8f9fe;
+        border-radius: 5px;
+      }
+      .big-image {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .heading {
+        padding: 5%;
+      }
+      .btn {
+        width: 70%;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #00c4dc;
+      }
+      .small {
+        margin: 15px 0px;
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 17px;
+      }
+      .small,
+      .btn {
+        color: #00c4dc;
+      }
+      @media (max-width: 760px) {
+        .section-engg {
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto;
+        }
+      }
+      @media (max-width: 560px) {
+        .section-engg {
+          grid-template-columns: auto;
+          grid-template-rows: auto auto auto;
+        }
+        .section-scholarship {
+          display: block;
+        }
+        .section-scholarship > div {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-block">
+      <div class="section-scholarship">
+        <div class="small-section">
+          <img src="https://via.placeholder.com/100" class="small-image" />
+          <div class="small-heading">
+            <h4>Scholarship</h4>
+            <p>Available</p>
+          </div>
+        </div>
+        <div class="small-section">
+          <img src="https://via.placeholder.com/100" class="small-image" />
+          <div class="small-heading">
+            <h4>Scholarship</h4>
+            <p>Available</p>
+          </div>
+        </div>
+        <div class="small-section">
+          <img src="https://via.placeholder.com/100" class="small-image" />
+          <div class="small-heading">
+            <h4>Scholarship</h4>
+            <p>Available</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-program">
+        <h1>Popular Program</h1>
+        <div class="flex-program">
+          <p>Graduate</p>
+          <p>Postgraduate</p>
+          <p>PHD Scholarship</p>
+          <p>Training</p>
+        </div>
+      </div>
+      <div class="section-engg">
+        <div class="engg">
+          <img
+            src="https://via.placeholder.com/250x150.png"
+            class="big-image"
+          />
+          <div class="heading">
+            <p>Agriculture</p>
+            <h4>Chemical Engineering</h4>
+            <p class="small">
+              Lorem ipsum dolor sit amet,<br />consector adipiscing elit, sed<br />do
+              eliusmod tempor incident ut
+            </p>
+            <div class="btn">APPLY NOW</div>
+          </div>
+        </div>
+        <div class="engg">
+          <img
+            src="https://via.placeholder.com/250x150.png"
+            class="big-image"
+          />
+          <div class="heading">
+            <p>Agriculture</p>
+            <h4>Chemical Engineering</h4>
+            <p class="small">
+              Lorem ipsum dolor sit amet,<br />consector adipiscing elit, sed<br />do
+              eliusmod tempor incident ut
+            </p>
+            <div class="btn">APPLY NOW</div>
+          </div>
+        </div>
+        <div class="engg">
+          <img
+            src="https://via.placeholder.com/250x150.png"
+            class="big-image"
+          />
+          <div class="heading">
+            <p>Agriculture</p>
+            <h4>Chemical Engineering</h4>
+            <p class="small">
+              Lorem ipsum dolor sit amet,<br />consector adipiscing elit, sed<br />do
+              eliusmod tempor incident ut
+            </p>
+            <div class="btn">APPLY NOW</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
