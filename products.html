@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #productsDiv {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-gap: 5%;
+      }
+      img {
+        width: 100%;
+      }
+      img:hover {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="buttons">
+      <button onclick="showCart()">Show Cart</button>
+      <button onclick="sortLH()">Sort LH</button>
+      <button onclick="sortHL()">Sort HL</button>
+    </div>
+    <div id="productsDiv"></div>
+  </body>
+</html>
+<script src="products.js"></script>

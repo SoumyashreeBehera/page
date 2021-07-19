@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <div id="inputs">
+      <input id="name" type="text" placeholder="Enter your Name" />
+      <input id="number" type="number" placeholder="Enter your Mobile num" />
+      <input id="email" type="text" placeholder="Enter your email id" />
+      <input id="city" type="text" placeholder="Enter your City" />
+      <input id="pin" type="number" placeholder="Enter your pin number" />
+      <input id="state" type="text" placeholder="Enter your State" />
+      <button id="button">Go to paymentpage</button>
+    </div>
+  </body>
+</html>
+<script>
+  let button = document.getElementById("button");
+  button.addEventListener("click", function () {
+    window.location.href = "payment.html";
+  });
+</script>

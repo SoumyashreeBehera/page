@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #inputButtons {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 20px 0px;
+      }
+      #inputButtons > p {
+        flex-basis: 5%;
+        border: 1px solid black;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+      }
+      #inputButtons div {
+        flex: 1;
+      }
+      #productsDiv {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-gap: 5%;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="inputButtons">
+      <input type="text" placeholder="enter promocode" />
+      <button onclick="apply()">ApplyPromo</button>
+      <div></div>
+    </div>
+    <div id="productsDiv"></div>
+  </body>
+</html>
+<script src="cart.js"></script>

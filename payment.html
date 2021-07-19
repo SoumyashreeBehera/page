@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <div id="inputs">
+      <input id="cardName" type="text" placeholder="Enter cardholder Name" />
+      <input id="number" type="number" placeholder="Enter debitcard number" />
+      <input id="expiry" type="number" placeholder="Enter card expiry date" />
+      <input id="pin" type="number" placeholder="Enter card cvv pin" />
+      <button id="buttonOrder">Place Order</button>
+    </div>
+  </body>
+</html>
+<script>
+  let buttonOrder = document.getElementById("buttonOrder");
+  buttonOrder.addEventListener("click", function () {
+    alert("order is placed");
+
+    let promise = new Promise(function (resolve, reject) {
+      setTimeout(function () {
+        resolve("‘Your order is successfully placed’");
+      }, 3000);
+    });
+
+    promise.then(function (res) {
+      alert(res);
+    });
+  });
+</script>
